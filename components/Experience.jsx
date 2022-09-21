@@ -41,8 +41,8 @@ const Experience = () => {
                 </div>
                 <div className='w-full h-auto m-auto flex-col items-center justify-left px-10'>
                     <p className='py-2 text-gray-600 font-bold'>Front-End Engineer | Codomo</p>
-                    <p className='py-2 text-gray-600'>I was given the opportunity to intern at Codomo as a front-end engineer. My six months there was primarily working on Rolljak, one of Codomo's products, which went through several reiterations and redesigns with the design team. We used the scrum methodology to organise our workflow, and working alongside the tech leads, PM and POs was initially a steep learning curve, but nonetheless an important and fruitful experience learning to work in an agile team.</p>
-                    <p className='py-2 text-gray-600'>Although officially my title was a front-end engineer, some tickets did require some back-end routing and database changes. Ruby on Rails was Rolljak's techstack, along with SASS and Jquery. Towards the later months of my internship, Codomo started to integrate Cypress for unit testing.</p>
+                    <p className='py-2 text-gray-600'>I was given the opportunity to intern at Codomo as a front-end engineer. My six months there was primarily working on Rolljak, one of Codomo&apos;s products, which went through several reiterations and redesigns with the design team. We used the scrum methodology to organise our workflow, and working alongside the tech leads, PM and POs was initially a steep learning curve, but nonetheless an important and fruitful experience learning to work in an agile team.</p>
+                    <p className='py-2 text-gray-600'>Although officially my title was a front-end engineer, some tickets did require some back-end routing and database changes. Ruby on Rails was Rolljak&apos;s techstack, along with SASS and Jquery. Towards the later months of my internship, Codomo started to integrate Cypress for unit testing.</p>
                     <div className='shadow-xl rounded-xl hover:scale-105 ease-in duration-300 bg-white'>
                         <div className='flex justify-between p-5'>
                             <Image className='' src='/../public/assets/htmllogo.png' width='64px' height='64px'/>
@@ -66,7 +66,7 @@ const Experience = () => {
                 <div className='w-full h-auto m-auto flex-col items-center justify-left px-10'>
                     <p className='py-2 text-gray-600 font-bold'>Software Developer | NUS Fintech Society</p>
                     <p className='py-2 text-gray-600'>I joined Fintech Society as a Software Developer primarily because I wanted to continue my experience from Codomo as a Developer, although a part of it also stems from wanting to explore the crypto-currency scene and its various technologies.</p>
-                    <p className='py-2 text-gray-600'>Currently, I'm working on Decentralised Autonomous Organisation (DAO), a form of legal structure which gained popularity along with the rise of cryptocurrency ethusiasts and blockchain technology not as a machine learning or blockchain developer but likewise as a web developer.</p>
+                    <p className='py-2 text-gray-600'>Currently, I&apos;m working on Decentralised Autonomous Organisation (DAO), a form of legal structure which gained popularity along with the rise of cryptocurrency ethusiasts and blockchain technology not as a machine learning or blockchain developer but likewise as a web developer.</p>
                     <div className='shadow-xl rounded-xl hover:scale-105 ease-in duration-300 bg-white'>
                         <div className='flex justify-center p-5'>
                             <Image className='' src='/../public/assets/nextjslogo.png' width='64px' height='64px'/>
