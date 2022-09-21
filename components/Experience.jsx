@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Experience = () => {
   return (
-    <div className='w-full h-screen p-2'>
+    <div className='w-full p-2'>
         <div className='max-w-[1240px] mx-auto flex flex-col justify-center '>
             <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Experience</p>
             <h2 className='py-4'>My Past Experiences</h2>
