@@ -17,7 +17,8 @@ const Experience = () => {
                 </div>
                 <div className='w-full h-auto m-auto flex-col items-center justify-left px-10'>
                     <p className='py-2 text-gray-600 font-bold'>Harvard CS50 - Intro To Computer Science</p>
-                    <p className='py-2 text-gray-600'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, eveniet deleniti culpa accusamus saepe maxime. Quis itaque repudiandae, nam odit sequi incidunt adipisci, magni, nulla rem numquam nostrum iusto eligendi!</p>
+                    <p className='py-2 text-gray-600'>This is the first course I took which formally introduced me to programming. CS50 covered topics ranging from Machine Learning to Web Development to more theoretical Computer Science concepts, although mainly at the surface level. The initial part of the course was taught in C, and soon we moved on to python and flask.</p>
+                    <p className='py-2 text-gray-600'>Out of the topics that touched upon the topic which I gravitated towards was web-programming, that being my topic of choice for the final project in order to graduate the course. My first ever web application was a simple four route webapp using flask, html and css.</p>
                     <div className='shadow-xl rounded-xl hover:scale-105 ease-in duration-300 bg-white'>
                         <div className='flex justify-center p-5'>
                             <Image className='' src='/../public/assets/pythonlogo.jpg' width='64px' height='64px'/>
@@ -40,7 +41,8 @@ const Experience = () => {
                 </div>
                 <div className='w-full h-auto m-auto flex-col items-center justify-left px-10'>
                     <p className='py-2 text-gray-600 font-bold'>Front-End Engineer | Codomo</p>
-                    <p className='py-2 text-gray-600'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis iusto soluta quasi ipsam ab officia doloremque iure recusandae eius repellat, eligendi laboriosam atque quo doloribus porro esse officiis. Ratione, officia!</p>
+                    <p className='py-2 text-gray-600'>I was given the opportunity to intern at Codomo as a front-end engineer. My six months there was primarily working on Rolljak, one of Codomo's products, which went through several reiterations and redesigns with the design team. We used the scrum methodology to organise our workflow, and working alongside the tech leads, PM and POs was initially a steep learning curve, but nonetheless an important and fruitful experience learning to work in an agile team.</p>
+                    <p className='py-2 text-gray-600'>Although officially my title was a front-end engineer, some tickets did require some back-end routing and database changes. Ruby on Rails was Rolljak's techstack, along with SASS and Jquery. Towards the later months of my internship, Codomo started to integrate Cypress for unit testing.</p>
                     <div className='shadow-xl rounded-xl hover:scale-105 ease-in duration-300 bg-white'>
                         <div className='flex justify-between p-5'>
                             <Image className='' src='/../public/assets/htmllogo.png' width='64px' height='64px'/>
@@ -63,7 +65,8 @@ const Experience = () => {
                 </div>
                 <div className='w-full h-auto m-auto flex-col items-center justify-left px-10'>
                     <p className='py-2 text-gray-600 font-bold'>Software Developer | NUS Fintech Society</p>
-                    <p className='py-2 text-gray-600'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus obcaecati, soluta nulla eum nisi, doloremque possimus asperiores earum assumenda, commodi recusandae tempore corporis ullam! Commodi consequuntur nostrum doloremque iste. Quia.</p>
+                    <p className='py-2 text-gray-600'>I joined Fintech Society as a Software Developer primarily because I wanted to continue my experience from Codomo as a Developer, although a part of it also stems from wanting to explore the crypto-currency scene and its various technologies.</p>
+                    <p className='py-2 text-gray-600'>Currently, I'm working on Decentralised Autonomous Organisation (DAO), a form of legal structure which gained popularity along with the rise of cryptocurrency ethusiasts and blockchain technology not as a machine learning or blockchain developer but likewise as a web developer.</p>
                     <div className='shadow-xl rounded-xl hover:scale-105 ease-in duration-300 bg-white'>
                         <div className='flex justify-center p-5'>
                             <Image className='' src='/../public/assets/nextjslogo.png' width='64px' height='64px'/>
