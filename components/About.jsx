@@ -1,11 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import {FaGithub, FaLinkedinIn} from 'react-icons/fa'
 import { AiOutlineMail } from 'react-icons/ai'
 
 const About = () => {
   return (
-    <div className='w-full h-screen p-2 flex item-center'>
+    <div id='about' className='w-full h-screen p-2 flex item-center'>
         <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-6'>
             <div className='col-span-2'>
                 <p className='uppercase text-xl tracking-widest'>About</p>
@@ -15,15 +16,23 @@ const About = () => {
                 <p className='py-2 text-gray-600'>The photo on the right is me posing with my door chalked by people in my house, a tradition that is carried out at the start of each semester when everyone moves into their dormitory rooms for the first time. I often find myself admiring the drawings when I come back because it reminds me of my place in Cinnamon College and that I'm constantly surrounded by other friends on the same journey as me.</p>
                 <div className='flex items-center justify-center'>
                     <div className='flex items-center justify-between my-4 w-[40%] sm:w-[40%] text-2xl'>
-                        <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                            <FaLinkedinIn/>
-                        </div>
-                        <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                            <FaGithub/>
-                        </div>
-                        <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                            <AiOutlineMail/>
-                        </div>
+                        <Link href='https://www.linkedin.com/in/jia-wei-lim-747037181'>
+                            <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                                <FaLinkedinIn/>
+                            </div>
+                        </Link>
+
+                        <Link href='https://github.com/Kappaccinoh'>
+                            <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                                <FaGithub/>
+                            </div>
+                        </Link>
+
+                        <Link href='mailto:lim.jia28@email.com'>
+                            <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                                <AiOutlineMail/>
+                            </div>
+                        </Link>
                     </div>
                 </div>
             </div>

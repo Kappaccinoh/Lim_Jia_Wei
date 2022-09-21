@@ -1,9 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Main = () => {
   return (
-    <div className='w-full h-screen text-center'>
+    <div id='main' className='w-full h-screen text-center'>
         <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
             <div>
                 <p className='uppercase text-sm tracking-widest text-gray-600'>Hey there, Greetings!</p>
@@ -16,9 +17,11 @@ const Main = () => {
                     possible to become an efficient and practical software developer.
                 </p>
                 <div className='py-4'>
-                    <Image className='rounded-full' src='/../public/assets/jiawei.jpeg' alt='/' width='300' height='300'/>
+                    <Image className='rounded-full' src='/../public/assets/Jumaring2.jpg' alt='/' width='300' height='300'/>
                 </div>
-                <p className='py-4 uppercase text-md text-gray-800 underline'>scroll for more</p>
+                <Link href='/#about'>
+                    <p className='cursor-pointer hover:scale-105 ease-in duration-300 py-4 uppercase text-md text-gray-800 underline'>scroll for more</p>
+                </Link>
             </div>
         </div>
     </div>

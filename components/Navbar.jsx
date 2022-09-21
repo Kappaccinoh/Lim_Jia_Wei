@@ -1,24 +1,38 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
 
 const Navbar = () => {
+
+    const [shadow, setShadow] = useState(false);
+
+    useEffect(() => {
+        const handleShadow = () => {
+            if (window.scrollY >= 90) {
+                setShadow(true);
+            } else {
+                setShadow(false);
+            }
+        };
+        window.addEventListener('scroll', handleShadow);
+    }, []);
+
     return (
-        <div className='fixed w-full h-20 shadow-xl z-[100]'>
+        <div className={shadow ? 'fixed w-full h-20 shadow-xl z-[100] bg-[#ecf0f3]' : 'fixed w-full h-20 z-[100]'}>
             <div className='flex justify-center items-center w-full h-full px-2 2xl:px-16'>
                 <div>
                     <ul className='hidden md:flex'>
                         <Link href='/'>
                             <li className='ml-10 text-sm uppercase hover:border-b-2 border-black'>Home</li>
                         </Link>
-                        <Link href='/'>
+                        <Link href='/#about'>
                             <li className='ml-10 text-sm uppercase hover:border-b-2 border-black'>About</li>
                         </Link>
-                        <Link href='/'>
+                        <Link href='/#experience'>
                             <li className='ml-10 text-sm uppercase hover:border-b-2 border-black'>Experience</li>
                         </Link>
-                        <Link href='/'>
+                        <Link href='/#contact'>
                             <li className='ml-10 text-sm uppercase hover:border-b-2 border-black'>Contact</li>
                         </Link>
                     </ul>
