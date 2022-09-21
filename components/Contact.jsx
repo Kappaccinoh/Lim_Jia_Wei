@@ -18,7 +18,7 @@ const Contact = () => {
             &nbsp;or hit me up through one of my socials below! I&apos;m always keeping an eye out for opportunities or other projects to take on in the coming months, and I&apos;d love to get involved and value add to your project!
             </p>
             <div className='py-5 rounded-xl shadow-gray-400 hover:scale-105 ease-in duration-300'>
-                <Image className='rounded-xl' src='/../public/assets/jiawei4.jpeg' width='550px' height='409px'/>
+                <Image className='rounded-xl' src='public/assets/jiawei4.jpeg' width='550px' height='409px'/>
             </div>
 
             <div className='flex items-center justify-center'>
