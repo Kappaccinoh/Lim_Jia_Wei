@@ -11,7 +11,7 @@ const Experience = () => {
             <div id='cs50-harvard' className='flex justify-center p-5'>
                 <div className='flex justify-center flex-col w-[30%]'>
                     <div className='flex justify-center items-center p-2 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 bg-white'>
-                        <Image className='rounded-xl' src='public/assets/cs50logo.png' width='250' height='250'/>
+                        <Image className='rounded-xl' src='assets/cs50logo.png' width='250' height='250'/>
                     </div>
                     <h3 className='py-3 text-center'>June 2021 - Aug 2021</h3>
                 </div>
@@ -21,9 +21,9 @@ const Experience = () => {
                     <p className='py-2 text-gray-600'>Out of the topics that touched upon the topic which I gravitated towards was web-programming, that being my topic of choice for the final project in order to graduate the course. My first ever web application was a simple four route webapp using flask, html and css.</p>
                     <div className='shadow-xl rounded-xl hover:scale-105 ease-in duration-300 bg-white'>
                         <div className='flex justify-center p-5'>
-                            <Image className='' src='public/assets/pythonlogo.jpg' width='64px' height='64px'/>
-                            <Image className='' src='public/assets/flasklogo2.png' width='64px' height='64px'/>
-                            <Image className='' src='public/assets/C_Logo.png' width='64px' height='64px'/>
+                            <Image className='' src='assets/pythonlogo.jpg' width='64px' height='64px'/>
+                            <Image className='' src='assets/flasklogo2.png' width='64px' height='64px'/>
+                            <Image className='' src='assets/C_Logo.png' width='64px' height='64px'/>
                         </div>
                     </div>
                 </div>
@@ -32,10 +32,10 @@ const Experience = () => {
             <div id='rolljak-codomo' className='flex justify-center p-5'>
                 <div className='flex justify-center flex-col w-[30%]'>
                     <div className='my-2 flex justify-center items-center p-2 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 bg-white'>
-                        <Image className='rounded-xl' src='public/assets/codomologo.jpg' width='250' height='250'/>
+                        <Image className='rounded-xl' src='assets/codomologo.jpg' width='250' height='250'/>
                     </div>
                     <div className='my-2 flex justify-center items-center p-2 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 bg-white'>
-                        <Image className='rounded-xl' src='public/assets/rolljaklogo.webp' width='250' height='250'/>
+                        <Image className='rounded-xl' src='assets/rolljaklogo.webp' width='250' height='250'/>
                     </div>
                     <h3 className='py-3 text-center'>Jan 2022 - June 2022</h3>
                 </div>
@@ -45,12 +45,12 @@ const Experience = () => {
                     <p className='py-2 text-gray-600'>Although officially my title was a front-end engineer, some tickets did require some back-end routing and database changes. Ruby on Rails was Rolljak&apos;s techstack, along with SASS and Jquery. Towards the later months of my internship, Codomo started to integrate Cypress for unit testing.</p>
                     <div className='shadow-xl rounded-xl hover:scale-105 ease-in duration-300 bg-white'>
                         <div className='flex justify-between p-5'>
-                            <Image className='' src='public/assets/htmllogo.png' width='64px' height='64px'/>
-                            <Image className='' src='public/assets/scsslogo.png' width='64px' height='64px'/>
-                            <Image className='' src='public/assets/jquerylogo.png' width='64px' height='64px'/>
-                            <Image className='' src='public/assets/railslogo.png' width='64px' height='64px'/>
-                            <Image className='' src='public/assets/cypresslogo.jpg' width='64px' height='64px'/>
-                            <Image className='' src='public/assets/postgreslogo.png' width='64px' height='64px'/>
+                            <Image className='' src='assets/htmllogo.png' width='64px' height='64px'/>
+                            <Image className='' src='assets/scsslogo.png' width='64px' height='64px'/>
+                            <Image className='' src='assets/jquerylogo.png' width='64px' height='64px'/>
+                            <Image className='' src='assets/railslogo.png' width='64px' height='64px'/>
+                            <Image className='' src='assets/cypresslogo.jpg' width='64px' height='64px'/>
+                            <Image className='' src='assets/postgreslogo.png' width='64px' height='64px'/>
                         </div>
                     </div>
                 </div>
@@ -59,7 +59,7 @@ const Experience = () => {
             <div id='nus-fintch' className='flex justify-center p-5'>
                 <div className='flex justify-center flex-col w-[30%]'>
                     <div className='my-2 flex justify-center items-center p-2 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 bg-white'>
-                        <Image className='rounded-xl' src='public/assets/fintechlogo.jpg' width='250' height='250'/>
+                        <Image className='rounded-xl' src='assets/fintechlogo.jpg' width='250' height='250'/>
                     </div>
                     <h3 className='py-3 text-center'>Aug 2022 - Present</h3>
                 </div>
@@ -69,8 +69,8 @@ const Experience = () => {
                     <p className='py-2 text-gray-600'>Currently, I&apos;m working on Decentralised Autonomous Organisation (DAO), a form of legal structure which gained popularity along with the rise of cryptocurrency ethusiasts and blockchain technology not as a machine learning or blockchain developer but likewise as a web developer.</p>
                     <div className='shadow-xl rounded-xl hover:scale-105 ease-in duration-300 bg-white'>
                         <div className='flex justify-center p-5'>
-                            <Image className='' src='public/assets/nextjslogo.png' width='64px' height='64px'/>
-                            <Image className='' src='public/assets/tailwindcsslogo.jpg' width='64px' height='64px'/>
+                            <Image className='' src='assets/nextjslogo.png' width='64px' height='64px'/>
+                            <Image className='' src='assets/tailwindcsslogo.jpg' width='64px' height='64px'/>
                         </div>
                     </div>
                 </div>

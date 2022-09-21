@@ -17,7 +17,7 @@ const Main = () => {
                     possible to become an efficient and practical software developer.
                 </p>
                 <div className='py-4'>
-                    <Image className='rounded-full' src='public/assets/Jumaring2.jpg' alt='/' width='300' height='300'/>
+                    <Image className='rounded-full' src='assets/Jumaring2.jpg' alt='/' width='300' height='300'/>
                 </div>
                 <Link href='/#about'>
                     <p className='cursor-pointer hover:scale-105 ease-in duration-300 py-4 uppercase text-md text-gray-800 underline'>scroll for more</p>
