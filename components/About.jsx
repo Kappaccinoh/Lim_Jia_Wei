@@ -37,7 +37,7 @@ const About = () => {
                 </div>
             </div>
             <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-2 hover:scale-105 ease-in duration-300'>
-                <Image className='rounded-xl' src='public/assets/doorpic.jpg' alt='Jia Wei Rock Climbing' height='1280' width='960'/>
+                <Image className='rounded-xl' src='assets/doorpic.jpg' alt='Jia Wei Rock Climbing' height='1280' width='960'/>
             </div>
         </div>
     </div>
