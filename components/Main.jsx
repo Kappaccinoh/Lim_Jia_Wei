@@ -15,12 +15,12 @@ const Main = () => {
                 <div className="w-full md:w-3/4">
                     
                     {/* Introduction Hook */}
-                    <section className="mb-12">
-                        <h1 className="text-2xl font-bold tracking-tight text-gray-900 mb-2">
+                    <section className="mb-5">
+                        <h1 className="text-2xl font-bold tracking-tight text-gray-900">
                             Hi there, I am Jia Wei.
                         </h1>
                         <p className="text-lg text-gray-700">
-                            A software engineer turned theoretical physicist.
+                            I am a software engineer turned computer science researcher. My research focuses on bridging the gap between theoretical physical models and high-performance software architecture, with a long-term interest in applying computational methods to fundamental physical systems.
                         </p>
                     </section>
 
@@ -28,7 +28,7 @@ const Main = () => {
 
                         {/* CATEGORY 1: Physics & Research */}
                         <section>
-                            <h3 className="text-sm font-bold text-gray-500 uppercase tracking-wider mb-4 border-b border-gray-200 pb-1">
+                            <h3 className="font-bold text-gray-500 uppercase tracking-wider border-b border-gray-200 pb-1">
                                 Physics & Research
                             </h3>
                             <div className="space-y-3">
@@ -46,7 +46,7 @@ const Main = () => {
                                 {/* Item */}
                                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
                                     <div>
-                                        <h4 className="text-base font-bold text-gray-900">Quantum Bouncer (Matlab Simulation)</h4>
+                                        <h4 className="text-base font-bold text-gray-900">Quantum Bouncer Simulation</h4>
                                         <p className="text-sm text-gray-700">Quantum Mechanics I Coursework • NUS Physics</p>
                                     </div>
                                     <div className="text-left sm:text-right shrink-0">
@@ -57,7 +57,7 @@ const Main = () => {
                                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
                                     <div>
                                         <h4 className="text-base font-bold text-gray-900">Relevant Physics Coursework</h4>
-                                        <p className="text-sm text-gray-700">Quantum Mechanics I, Thermodynamics & Statistical Mechanics, Mathematical Methods in Physics II, Electricity and Magnetism I, General Relativity, Experimental Techniques in Physics I</p>
+                                        <p className="text-sm text-gray-700">Quantum Mechanics I, Thermodynamics & Statistical Mechanics, Mathematical Methods in Physics II, Electricity and Magnetism I, Experimental Physics I</p>
                                     </div>
                                 </div>
                             </div>
@@ -65,7 +65,7 @@ const Main = () => {
                         
                         {/* CATEGORY 2: Software Engineering & AI */}
                         <section>
-                            <h3 className="text-sm font-bold text-gray-500 uppercase tracking-wider mb-4 border-b border-gray-200 pb-1">
+                            <h3 className="font-bold text-gray-500 uppercase tracking-wider border-b border-gray-200 pb-1">
                                 Software Engineering & AI
                             </h3>
                             <div className="space-y-3">
@@ -85,11 +85,14 @@ const Main = () => {
                                     <div>
                                         <h4 className="text-base font-bold text-gray-900">Full Stack Software Developer</h4>
                                         <p className="text-sm text-gray-700">Reluvate Technologies, NUS Overseas Colleges (NOC)</p>
+                                        <Link href="https://github.com/Kappaccinoh/parklah" target="_blank" rel="noopener noreferrer" className="text-xs text-blue-600 hover:underline block sm:inline-block mt-0.5">
+                                        NOC Project Repo</Link>
                                     </div>
                                     <div className="text-left sm:text-right shrink-0">
                                         <p className="text-sm font-medium text-gray-800">Dec 2024 – Jun 2025</p>
                                         <p className="text-xs text-gray-500">Malaysia</p>
                                     </div>
+                                    
                                 </div>
                                 {/* Item */}
                                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
@@ -105,8 +108,10 @@ const Main = () => {
                                 {/* Item */}
                                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
                                     <div>
-                                        <h4 className="text-base font-bold text-gray-900">Summer Intern (Llama3 & API Integration)</h4>
-                                        <p className="text-sm text-gray-700">Hong Kong Applied Science and Technology Research Institute (ASTRI)</p>
+                                        <h4 className="text-base font-bold text-gray-900">Road Network Spatial AI & Computer Vision System</h4>
+                                        <p className="text-sm text-gray-700">Summer Intern • Hong Kong Applied Science and Technology Research Institute (ASTRI)</p>
+                                        <Link href="https://github.com/Kappaccinoh/ASTRI" target="_blank" rel="noopener noreferrer" className="text-xs text-blue-600 hover:underline block sm:inline-block mt-0.5">
+                                        Project Report</Link>
                                     </div>
                                     <div className="text-left sm:text-right shrink-0">
                                         <p className="text-sm font-medium text-gray-800">Jul 2024 – Sep 2024</p>
@@ -118,6 +123,8 @@ const Main = () => {
                                     <div>
                                         <h4 className="text-base font-bold text-gray-900">LaundroBot Director (IoT & Hardware)</h4>
                                         <p className="text-sm text-gray-700">NUS College</p>
+                                        <Link href="https://github.com/Kappaccinoh/LaundroBot/blob/main/README.md" target="_blank" rel="noopener noreferrer" className="text-xs text-blue-600 hover:underline block sm:inline-block mt-0.5">
+                                        LaundroBot AY23/24 Handover Report</Link>
                                     </div>
                                     <div className="text-left sm:text-right shrink-0">
                                         <p className="text-sm font-medium text-gray-800">Aug 2023 – Aug 2024</p>
@@ -152,7 +159,7 @@ const Main = () => {
                 </div>
 
                 {/* Right Side: Image and Contact Links */}
-                <div className="w-full md:w-1/4 max-w-[160px] shrink-0 ml-auto flex flex-col gap-4">
+                <div className="w-full md:w-1/4 max-w-[180px] shrink-0 ml-auto flex flex-col gap-4">
                     <Image 
                         className="rounded-sm border border-gray-300 shadow-sm object-cover" 
                         src={`${process.env.__NEXT_ROUTER_BASEPATH || ''}/assets/L_4685P.jpg`}
@@ -190,14 +197,7 @@ const Main = () => {
                             <br />
                             <span className="text-gray-500">BComp (Hons) in Computer Science</span>
                             <br />
-                            <span className="text-gray-500 italic">Spec: Networking & Distributed Systems</span>
-                            <br />
-                            <span className="text-gray-500">NUS College Class of 2026</span>
-                        </div>
-                        <div>
-                            <strong className="block text-gray-800">Research Interests:</strong>
-                            <span className="text-gray-500">High Energy Physics</span>
-                            <span className="text-gray-500">Computational physics and simulation</span>
+                            <span className="text-gray-500">NUS College '26</span>
                         </div>
                     </div>
                 </div>
