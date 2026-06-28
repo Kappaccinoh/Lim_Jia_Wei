@@ -155,7 +155,7 @@ const Main = () => {
                 <div className="w-full md:w-1/4 max-w-[160px] shrink-0 ml-auto flex flex-col gap-4">
                     <Image 
                         className="rounded-sm border border-gray-300 shadow-sm object-cover" 
-                        src="/assets/L_4685P.jpg" 
+                        src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/assets/L_4685P.jpg`}
                         alt="Jia Wei" 
                         width={220} 
                         height={293} 
