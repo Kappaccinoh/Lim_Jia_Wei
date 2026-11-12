@@ -31,3 +31,26 @@ html {
     @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white
   }
 }
+
+/* ---------- Print / "Save as PDF" ---------- */
+@page {
+  size: A4;
+  margin: 14mm 15mm;
+}
+
+@media print {
+  /* Tailwind sizes are rem-based, so this scales the whole page down evenly */
+  html {
+    font-size: 13px;
+  }
+
+  body {
+    background: #fff !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

@@ -4,19 +4,20 @@ import Link from 'next/link';
 
 const Main = () => {
   return (
-    <div id="main" className="max-w-6xl mx-auto p-6 md:p-12 font-sans text-gray-900">
+    <div id="main" className="max-w-6xl mx-auto p-6 md:p-12 print:max-w-none print:p-0 font-sans text-gray-900">
 
-        <main className="space-y-12">
+        <main className="space-y-12 print:space-y-0">
 
-            <section className="flex flex-col-reverse md:flex-row gap-12 items-start">
+            <section className="flex flex-col-reverse md:flex-row print:flex-row gap-12 print:gap-8 items-start">
 
                 {/* Left Side: Text Content */}
-                <div className="w-full md:w-3/4">
+                <div className="w-full md:w-3/4 print:w-auto print:flex-1 print:min-w-0">
 
                     {/* Introduction Hook */}
                     <section className="mb-8">
-                        <h1 className="text-2xl font-bold tracking-tight text-gray-900">
-                            Hi there, I am Jia Wei.
+                        <h1 className="text-2xl print:text-3xl font-bold tracking-tight text-gray-900">
+                            <span className="print:hidden">Hi there, I am Jia Wei.</span>
+                            <span className="hidden print:inline">Lim Jia Wei</span>
                         </h1>
                         <p className="text-lg text-gray-700 mt-2">
                             I am an aspiring theoretical physicist, currently a final-year
@@ -28,11 +29,11 @@ const Main = () => {
                         </p>
                     </section>
 
-                    <div className="space-y-10">
+                    <div className="space-y-10 print:space-y-6">
 
                         {/* CATEGORY 1: Education */}
                         <section>
-                            <h3 className="font-bold text-gray-500 uppercase tracking-wider border-b border-gray-200 pb-1">
+                            <h3 className="font-bold text-gray-500 uppercase tracking-wider border-b border-gray-200 pb-1 break-after-avoid">
                                 Education
                             </h3>
                             <div className="space-y-3 mt-3">
@@ -65,13 +66,13 @@ const Main = () => {
 
                         {/* CATEGORY 2: Research */}
                         <section>
-                            <h3 className="font-bold text-gray-500 uppercase tracking-wider border-b border-gray-200 pb-1">
+                            <h3 className="font-bold text-gray-500 uppercase tracking-wider border-b border-gray-200 pb-1 break-after-avoid">
                                 Research
                             </h3>
                             <div className="space-y-5 mt-3">
 
                                 {/* Item */}
-                                <div>
+                                <div className="break-inside-avoid">
                                     <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
                                         <div>
                                             <h4 className="text-base font-bold text-gray-900">Circuit Structure and Classical Simulability on Superconducting Quantum Hardware</h4>
@@ -94,7 +95,7 @@ const Main = () => {
                                 </div>
 
                                 {/* Item */}
-                                <div>
+                                <div className="break-inside-avoid">
                                     <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
                                         <div>
                                             <h4 className="text-base font-bold text-gray-900">Geomagnetic Field Reconstruction and Nonlinear State Estimation</h4>
@@ -125,7 +126,7 @@ const Main = () => {
                                 </div>
 
                                 {/* Item */}
-                                <div>
+                                <div className="break-inside-avoid">
                                     <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
                                         <div>
                                             <h4 className="text-base font-bold text-gray-900">Quantum Bouncer: Wavepacket Dynamics in a Linear Potential</h4>
@@ -158,7 +159,7 @@ const Main = () => {
 
                         {/* CATEGORY 3: Computational Methods */}
                         <section>
-                            <h3 className="font-bold text-gray-500 uppercase tracking-wider border-b border-gray-200 pb-1">
+                            <h3 className="font-bold text-gray-500 uppercase tracking-wider border-b border-gray-200 pb-1 break-after-avoid">
                                 Computational Methods
                             </h3>
                             <div className="space-y-2 mt-3 text-sm text-gray-700">
@@ -181,12 +182,12 @@ const Main = () => {
 
                         {/* CATEGORY 4: Applied Engineering */}
                         <section>
-                            <h3 className="font-bold text-gray-500 uppercase tracking-wider border-b border-gray-200 pb-1">
+                            <h3 className="font-bold text-gray-500 uppercase tracking-wider border-b border-gray-200 pb-1 break-after-avoid">
                                 Applied Engineering Experience
                             </h3>
                             <div className="space-y-3 mt-3">
                                 {/* Item */}
-                                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
+                                <div className="break-inside-avoid flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
                                     <div>
                                         <h4 className="text-base font-bold text-gray-900">Road Network Spatial AI &amp; Computer Vision</h4>
                                         <p className="text-sm text-gray-700">Summer Intern &bull; Hong Kong Applied Science and Technology Research Institute (ASTRI)</p>
@@ -199,7 +200,7 @@ const Main = () => {
                                     </div>
                                 </div>
                                 {/* Item */}
-                                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
+                                <div className="break-inside-avoid flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
                                     <div>
                                         <h4 className="text-base font-bold text-gray-900">LaundroBot &mdash; Embedded Sensing &amp; Hardware</h4>
                                         <p className="text-sm text-gray-700">Project Director &bull; NUS College</p>
@@ -212,7 +213,7 @@ const Main = () => {
                                     </div>
                                 </div>
                                 {/* Item */}
-                                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
+                                <div className="break-inside-avoid flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
                                     <div>
                                         <h4 className="text-base font-bold text-gray-900">Full Stack Developer</h4>
                                         <p className="text-sm text-gray-700">Reluvate Technologies &bull; NUS Overseas Colleges</p>
@@ -225,7 +226,7 @@ const Main = () => {
                                     </div>
                                 </div>
                                 {/* Item */}
-                                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
+                                <div className="break-inside-avoid flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
                                     <div>
                                         <h4 className="text-base font-bold text-gray-900">Earlier software roles</h4>
                                         <p className="text-sm text-gray-700">Data engineering, NUS Computing (2024&ndash;25) &bull; Front-end engineering, NUS Fintech Society (2022&ndash;23) and Codomo (2022)</p>
@@ -241,14 +242,14 @@ const Main = () => {
                 </div>
 
                 {/* Right Side: Image and Contact Links */}
-                <div className="w-full md:w-1/4 max-w-[180px] shrink-0 ml-auto flex flex-col gap-4">
+                <div className="w-full md:w-1/4 max-w-[180px] print:w-[140px] shrink-0 ml-auto flex flex-col gap-4">
                     <Image
-                        className="rounded-sm border border-gray-300 shadow-sm object-cover"
+                        className="w-full h-auto rounded-sm border border-gray-300 shadow-sm print:shadow-none object-cover"
                         src={`${process.env.__NEXT_ROUTER_BASEPATH || ''}/assets/L_4685P.jpg`}
                         alt="Jia Wei"
                         width={220}
                         height={293}
-                        layout="responsive"
+                        priority
                     />
 
                     <div className="text-xs space-y-3 w-full border-t border-gray-300 pt-4 text-gray-600">
@@ -275,6 +276,15 @@ const Main = () => {
                         <div>
                             <strong className="block text-gray-800">Location:</strong>
                             <span>NUS College, Singapore</span>
+                        </div>
+                        <div className="print:hidden pt-1">
+                            <button
+                                type="button"
+                                onClick={() => window.print()}
+                                className="bg-none bg-transparent shadow-none rounded-sm normal-case text-blue-700 border border-blue-700 px-3 py-1.5 hover:bg-blue-50"
+                            >
+                                Download as PDF
+                            </button>
                         </div>
                     </div>
                 </div>
