@@ -2,6 +2,31 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
+// Opens the browser's print dialog ("Save as PDF").
+// withPhoto=false adds a class on <html> that hides the profile photo in print,
+// and tweaks the tab title so the suggested filename says "no photo".
+const printCV = (withPhoto) => {
+  const root = document.documentElement;
+  const originalTitle = document.title;
+
+  if (!withPhoto) {
+    root.classList.add('print-no-photo');
+    document.title = `${originalTitle} (no photo)`;
+  }
+
+  const cleanup = () => {
+    root.classList.remove('print-no-photo');
+    document.title = originalTitle;
+    window.removeEventListener('afterprint', cleanup);
+  };
+  window.addEventListener('afterprint', cleanup);
+
+  window.print();
+};
+
+const pdfButtonClass =
+  'bg-none bg-transparent shadow-none rounded-sm normal-case text-blue-700 border border-blue-700 px-3 py-1.5 hover:bg-blue-50 w-full whitespace-nowrap';
+
 const Main = () => {
   return (
     <div id="main" className="max-w-6xl mx-auto p-6 md:p-12 print:max-w-none print:p-0 font-sans text-gray-900">
@@ -244,7 +269,7 @@ const Main = () => {
                 {/* Right Side: Image and Contact Links */}
                 <div className="w-full md:w-1/4 max-w-[180px] print:w-[140px] shrink-0 ml-auto flex flex-col gap-4">
                     <Image
-                        className="w-full h-auto rounded-sm border border-gray-300 shadow-sm print:shadow-none object-cover"
+                        className="cv-photo w-full h-auto rounded-sm border border-gray-300 shadow-sm print:shadow-none object-cover"
                         src={`${process.env.__NEXT_ROUTER_BASEPATH || ''}/assets/L_4685P.jpg`}
                         alt="Jia Wei"
                         width={220}
@@ -252,7 +277,7 @@ const Main = () => {
                         priority
                     />
 
-                    <div className="text-xs space-y-3 w-full border-t border-gray-300 pt-4 text-gray-600">
+                    <div className="cv-contact text-xs space-y-3 w-full border-t border-gray-300 pt-4 text-gray-600">
                         <div>
                             <strong className="block text-gray-800">Currently exploring:</strong>
                             <span>High Energy Physics, Computational Physics</span>
@@ -277,13 +302,12 @@ const Main = () => {
                             <strong className="block text-gray-800">Location:</strong>
                             <span>NUS College, Singapore</span>
                         </div>
-                        <div className="print:hidden pt-1">
-                            <button
-                                type="button"
-                                onClick={() => window.print()}
-                                className="bg-none bg-transparent shadow-none rounded-sm normal-case text-blue-700 border border-blue-700 px-3 py-1.5 hover:bg-blue-50"
-                            >
-                                Download as PDF
+                        <div className="print:hidden pt-1 flex flex-col gap-2">
+                            <button type="button" onClick={() => printCV(true)} className={pdfButtonClass}>
+                                Download PDF
+                            </button>
+                            <button type="button" onClick={() => printCV(false)} className={pdfButtonClass}>
+                                Download PDF (no photo)
                             </button>
                         </div>
                     </div>
